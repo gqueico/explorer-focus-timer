@@ -28,6 +28,21 @@ html:not(.light) .ph-moon {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  appearance: none;
+}
+
 body,
 input,
 button,
@@ -48,10 +63,6 @@ body {
 #app {
   display: grid;
   justify-items: center;
-}
-
-.flex {
-  display: flex;
 }
 
 #toggle-mode {

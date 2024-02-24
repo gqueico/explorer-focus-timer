@@ -7,6 +7,8 @@ export function countdown() {
   }
 
   console.log('Iniciou')
+
+  setTimeout(() => countdown(), 1000)
 }
 
 export function updateDisplay(minutes, seconds) {

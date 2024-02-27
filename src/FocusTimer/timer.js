@@ -18,7 +18,7 @@ export function countdown() {
   }
 
   if(minutes < 0) {
-    reset()
+    reset() 
     return
   }
   

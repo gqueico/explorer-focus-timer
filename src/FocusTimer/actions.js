@@ -24,7 +24,7 @@ export function reset() {
 }
 
 export function toggleMusic() {
-  state.isMute = !document.documentElement.classList.toggle('music-on')
+  state.isMute = document.documentElement.classList.toggle('music-on')
 
   if(state.isMute) {
     sounds.bgAudio.play()

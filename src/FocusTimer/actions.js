@@ -18,15 +18,15 @@ export function set() {
 export function reset() {
   state.isRunning = false
   document.documentElement.classList.remove('running')
+
   timer.updateDisplay()
-  
   sounds.buttonPressAudio.play()
 }
 
 export function toggleMusic() {
   state.isMute = document.documentElement.classList.toggle('music-on')
 
-  if(state.isMute) {
+  if(!state.isMute) {
     sounds.bgAudio.play()
     return
   }

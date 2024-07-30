@@ -23,7 +23,11 @@ export function countdown() {
   if(minutes < 0 ) {
     reset()
     sounds.kichenTimer.play()
-    toggleMusic()
+
+    if(state.musicOn) {
+      toggleMusic()
+    }
+    
     return
   }
 

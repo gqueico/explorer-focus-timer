@@ -16,11 +16,14 @@ export function set() {
 }
 
 export function reset() {
-  state.isRunning = false
-  document.documentElement.classList.remove('running')
+  state.isRunning = document.documentElement.classList.toggle('running')
 
   timer.updateDisplay()
   sounds.buttonPressAudio.play()
+
+  if(state.musicOn) {
+    toggleMusic()
+  }
 }
 
 export function toggleMusic() {
